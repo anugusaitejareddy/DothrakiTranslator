@@ -16,7 +16,7 @@ header{
 }
 main{
     width: 50%;
-    margin: 3rem auto;
+    margin: 2.5rem auto;
     font-family: inherit;
 }
 #user-input{
@@ -43,12 +43,13 @@ main{
 }
 footer{
     background-color: #333;
-    padding: 2rem;
+    padding: 1.2rem;
     position: absolute;
     bottom: 0;
     text-align: center;
 }
-
 footer p {
+    width: 80%;
+    margin: auto;
     color: #fff;
 }
