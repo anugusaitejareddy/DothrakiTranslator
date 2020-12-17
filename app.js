@@ -10,11 +10,20 @@ function getTranslationURL(text)
     return url + "?" + "text=" + text;
 }
 
+function errorHandler()
+{
+    alert("Error occured");
+}
+
 async function clickHandler()
 {
     let userInput = document.getElementById("user-input").value;
-    const resposne = await fetch(getTranslationURL(userInput));
+    fetch(getTranslationURL(userInput))
+    .then(resposne => resposne.json)
+    .then(object => {
+        translatedOutput.value = object.contents.translated;
+    }).catch(errorHandler);
     const object = await resposne.json();
-    translatedOutput.value = object.contents.translated;
+ 
 }
 

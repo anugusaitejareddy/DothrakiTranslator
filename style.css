@@ -12,12 +12,17 @@ header{
     text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 main{
     width: 50%;
-    margin: 2.5rem auto;
+    margin:2rem auto 0 auto; 
     font-family: inherit;
+}
+main textarea{
+    width: 100%;
+    margin: auto;
 }
 #user-input{
     font-family: inherit;
@@ -28,10 +33,10 @@ main{
 #translated-output{
     font-family: inherit;
     padding: .5rem;
-    font-weight: 600;
+    font-weight: 1.5rem;
     font-size: 1rem;
 }
-#btn-translate button{
+#btn-translate button{ 
     padding: .7rem 1rem;
     border: none;
     font-size: 1rem;
@@ -43,13 +48,14 @@ main{
 }
 footer{
     background-color: #333;
-    padding: 1.2rem;
+    padding: 1rem;
     position: absolute;
     bottom: 0;
     text-align: center;
+    margin: 4rem 0 0 0;
 }
 footer p {
-    width: 80%;
+    width: 100%;
     margin: auto;
     color: #fff;
 }
