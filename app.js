@@ -10,7 +10,7 @@ function getTranslationURL(text)
     return url + "?" + "text=" + text;
 }
 
-function errorHandler()
+function errorHandler(error)
 {
     alert("Error occured");
 }
@@ -22,8 +22,6 @@ async function clickHandler()
     .then(resposne => resposne.json)
     .then(object => {
         translatedOutput.value = object.contents.translated;
-    }).catch(errorHandler);
-    const object = await resposne.json();
- 
+    }).catch(errorHandler); 
 }
 
